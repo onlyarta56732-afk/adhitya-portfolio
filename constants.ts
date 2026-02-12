@@ -1,11 +1,47 @@
-import { Experience, Project } from './types';
+import { Certificate, Experience, Project } from './types';
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
+  { label: 'Certificates', href: '#certificates' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
+];
+
+export const CERTIFICATES: Certificate[] = [
+  {
+    id: 1,
+    title: '1st Runner-Up – INSPECTION ITS 2025',
+    issuer: 'Department of Instrumentation Engineering, Institut Teknologi Sepuluh Nopember (ITS)',
+    date: '2025',
+    category: 'competition',
+    achievement: '1st Runner-Up',
+  },
+  {
+    id: 2,
+    title: '1st Runner-Up – IONIC PENS 2024',
+    issuer: 'Department of Internet Engineering Technology, Politeknik Elektronika Negeri Surabaya (PENS)',
+    date: '2024',
+    category: 'competition',
+    achievement: '1st Runner-Up',
+  },
+  {
+    id: 3,
+    title: 'Best Full Paper Innovation Award – IONIC PENS 2024',
+    issuer: 'Department of Internet Engineering Technology, PENS',
+    date: '2024',
+    category: 'competition',
+    achievement: 'Best Innovation',
+  },
+  {
+    id: 4,
+    title: 'Finalist – RRO ITS 2025',
+    issuer: 'Robokidz Robotic Olympiad, Institut Teknologi Sepuluh Nopember (ITS)',
+    date: '2025',
+    category: 'competition',
+    achievement: 'Finalist',
+  },
 ];
 
 export const PROJECTS: Project[] = [

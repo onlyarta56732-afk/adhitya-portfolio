@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Cpu, Home, User, Briefcase, Code, Mail } from 'lucide-react';
+import { Menu, X, Cpu, Home, User, Briefcase, Code, Mail, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_ITEMS } from '../constants';
 
@@ -19,6 +19,7 @@ const Navbar: React.FC = () => {
     switch (label) {
       case 'Home': return <Home size={18} />;
       case 'About': return <User size={18} />;
+      case 'Certificates': return <Award size={18} />;
       case 'Experience': return <Briefcase size={18} />;
       case 'Projects': return <Code size={18} />;
       case 'Contact': return <Mail size={18} />;
@@ -28,7 +29,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <motion.nav 
+      <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -36,7 +37,7 @@ const Navbar: React.FC = () => {
       >
         <div className={`pointer-events-auto transition-all duration-300 ${scrolled ? 'w-auto' : 'w-full max-w-7xl'}`}>
           <div className={`${scrolled ? 'glass rounded-full px-6 py-3' : 'px-4 py-4'} flex items-center justify-between transition-all duration-300`}>
-            
+
             {/* Logo */}
             <div className={`flex items-center gap-2 cursor-pointer ${scrolled ? 'mr-8' : ''}`} onClick={() => window.scrollTo(0, 0)}>
               <div className="bg-gradient-to-tr from-primary to-secondary p-1.5 rounded-lg">
@@ -46,7 +47,7 @@ const Navbar: React.FC = () => {
                 ADHITYA<span className="text-primary">.DEV</span>
               </span>
             </div>
-            
+
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center gap-1">
               {NAV_ITEMS.map((item) => (
@@ -62,7 +63,7 @@ const Navbar: React.FC = () => {
                 </a>
               ))}
             </div>
-            
+
             {/* Mobile Toggle */}
             <div className="flex md:hidden">
               <button

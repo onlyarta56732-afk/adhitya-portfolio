@@ -26,11 +26,11 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Bridging Hardware & Intelligence</h3>
             <p className="text-slate-300 leading-relaxed text-lg mb-6">
-              I am a Computer Engineering student at <span className="text-primary font-semibold">PENS Surabaya</span>, driven by a relentless curiosity for how things work.
+              I am a Computer Engineering student at <span className="text-primary font-semibold">Politeknik Elektronika Negeri Surabaya</span>, driven by a relentless curiosity for how things work.
               My journey involves merging the physical world with digital logic through IoT, Robotics, and Embedded Systems.
             </p>
             <div className="flex flex-wrap gap-3">
-              {['Kotlin', 'C++', 'IoT', 'Robotics', 'Node-RED', 'Linux', 'ROS', 'Python', 'React', 'Tailwind', 'Scientific papers', 'Computer Vision'].map((skill) => (
+              {['C++', 'IoT', 'Robotics', 'Node-RED', 'Linux', 'ROS', 'Python', 'React', 'Tailwind', 'Scientific papers', 'Computer Vision', 'Kotlin'].map((skill) => (
                 <span key={skill} className="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-sm text-primary font-mono">
                   {skill}
                 </span>
@@ -54,12 +54,12 @@ const About: React.FC = () => {
             </div>
             <div className="space-y-4">
               <div className="pl-4 border-l-2 border-white/10">
-                <div className="text-white font-medium">PENS Surabaya</div>
-                <div className="text-xs text-slate-500">Current Student</div>
+                <div className="text-white font-medium">Politeknik Elektronika Negeri Surabaya</div>
+                <div className="text-xs text-slate-500">Computer Engineering | 2025 - 2029</div>
               </div>
               <div className="pl-4 border-l-2 border-white/10">
-                <div className="text-white font-medium">SMK Antartika 2</div>
-                <div className="text-xs text-slate-500">2022 - 2025</div>
+                <div className="text-white font-medium">SMK Antartika 2 Sidoarjo</div>
+                <div className="text-xs text-slate-500">Computer and Network Engineering | 2022 - 2025</div>
               </div>
             </div>
           </motion.div>

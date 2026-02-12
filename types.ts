@@ -16,6 +16,15 @@ export interface Experience {
   type: 'work' | 'education' | 'activity';
 }
 
+export interface Certificate {
+  id: number;
+  title: string;
+  issuer: string;
+  date: string;
+  category: 'competition' | 'seminar' | 'training';
+  achievement?: string;
+}
+
 export interface NavItem {
   label: string;
   href: string;
