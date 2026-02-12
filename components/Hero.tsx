@@ -4,7 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Instagram, Cpu, Database, Globe
 
 const Hero: React.FC = () => {
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = ["IoT Enthusiast", "Robotics Developer", "Network Engineer"];
+  const roles = ["IoT Enthusiast", "Robotics Developer", "Network Engineer", "Scientific Papers", "AI Enthusiast", "Machine Learning Engineer", "Web Developer"];
 
   useEffect(() => {
     const interval = setInterval(() => {
