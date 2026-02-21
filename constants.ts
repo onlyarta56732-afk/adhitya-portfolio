@@ -17,6 +17,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2025',
     category: 'competition',
     achievement: '1st Runner-Up',
+    imageUrl: 'cert-inspection-its-2025.jpg',
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2024',
     category: 'competition',
     achievement: '1st Runner-Up',
+    imageUrl: 'cert-ionic-pens-2024.jpg',
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2024',
     category: 'competition',
     achievement: 'Best Innovation',
+    imageUrl: 'cert-ionic-pens-2024-paper.jpg',
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2025',
     category: 'competition',
     achievement: 'Finalist',
+    imageUrl: 'cert-rro-its-2025.jpg',
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Jan 2025',
     category: 'training',
     achievement: 'Cyber Security',
+    imageUrl: 'cert-bnsp-cybersecurity.jpg',
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Apr 2025',
     category: 'training',
     achievement: 'MTCNA',
+    imageUrl: 'cert-mikrotik-mtcna.jpg',
   },
   {
     id: 7,
@@ -65,6 +71,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Feb 2025',
     category: 'training',
     achievement: 'Laravel',
+    imageUrl: 'cert-sanbercode-laravel.jpg',
   },
   {
     id: 8,
@@ -73,6 +80,52 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Nov 2024',
     category: 'training',
     achievement: 'Cyber Security',
+    imageUrl: 'cert-telkom-cybersecurity-officer.jpg',
+  },
+  {
+    id: 9,
+    title: 'ICHIRO TechXperience – Chronicle of Vision',
+    issuer: 'ICHIRO ITS Robotics Team, Institut Teknologi Sepuluh Nopember',
+    date: 'Nov 2024',
+    category: 'seminar',
+    achievement: 'Participant',
+    imageUrl: 'cert-ichiro-its-workshop-2024.jpg',
+  },
+  {
+    id: 10,
+    title: 'Dasar dan Penggunaan Generatif AI',
+    issuer: 'Codepolitan – AI Opportunity Fund: Asia Pacific (Google.org × AVPN × Asian Development Bank)',
+    date: 'Jun 2025',
+    category: 'seminar',
+    achievement: 'Graduate',
+    imageUrl: 'cert-codepolitan-generative-ai.jpg',
+  },
+  {
+    id: 11,
+    title: 'Youth Today – Redefining Youth Leadership',
+    issuer: 'AIESEC in Surabaya 2025',
+    date: 'Sep 2025',
+    category: 'seminar',
+    achievement: 'Delegate',
+    imageUrl: 'cert-aiesec-youth-today-2025.jpg',
+  },
+  {
+    id: 12,
+    title: 'Energy Policy Workshop – East Java Green Policy XChange 2025',
+    issuer: 'Green Living Support × New Energy Nexus Indonesia',
+    date: 'Nov 2025',
+    category: 'seminar',
+    achievement: 'Peserta',
+    imageUrl: 'cert-green-living-energy-policy-2025.jpg',
+  },
+  {
+    id: 13,
+    title: 'Innovillage – How to Validate Your Social Project',
+    issuer: 'Telkom University – Program Social Project Innovillage (Danantara × Dikti Saintek)',
+    date: 'Dec 2025',
+    category: 'seminar',
+    achievement: 'Peserta',
+    imageUrl: 'cert-innovillage-telkom-2025.jpg',
   },
 ];
 

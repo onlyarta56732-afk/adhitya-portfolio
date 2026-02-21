@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, Trophy, Medal, Star, Filter } from 'lucide-react';
+import { Award, Trophy, Medal, Star, Filter, X, ZoomIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CERTIFICATES } from '../constants';
 import { Certificate } from '../types';
@@ -19,6 +19,7 @@ const filters = [
 
 const Certificates: React.FC = () => {
     const [activeFilter, setActiveFilter] = useState<string>('all');
+    const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
     const filtered = activeFilter === 'all'
         ? CERTIFICATES
@@ -31,7 +32,7 @@ const Certificates: React.FC = () => {
                 {/* Section Header */}
                 <div className="mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        Certificates & Achievements
+                        Certificates &amp; Achievements
                     </h2>
                     <div className="h-1 w-20 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"></div>
                     <p className="text-slate-400 mt-4 max-w-2xl text-lg">
@@ -46,8 +47,8 @@ const Certificates: React.FC = () => {
                             key={f.key}
                             onClick={() => setActiveFilter(f.key)}
                             className={`relative px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeFilter === f.key
-                                    ? 'text-white shadow-lg'
-                                    : 'text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 border border-white/5'
+                                ? 'text-white shadow-lg'
+                                : 'text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 border border-white/5'
                                 }`}
                         >
                             {activeFilter === f.key && (
@@ -69,7 +70,12 @@ const Certificates: React.FC = () => {
                 <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <AnimatePresence mode="popLayout">
                         {filtered.map((cert, index) => (
-                            <CertificateCard key={cert.id} cert={cert} index={index} />
+                            <CertificateCard
+                                key={cert.id}
+                                cert={cert}
+                                index={index}
+                                onImageClick={(img) => setLightboxImg(img)}
+                            />
                         ))}
                     </AnimatePresence>
                 </motion.div>
@@ -85,11 +91,49 @@ const Certificates: React.FC = () => {
                     </motion.div>
                 )}
             </div>
+
+            {/* Lightbox Modal */}
+            <AnimatePresence>
+                {lightboxImg && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+                        onClick={() => setLightboxImg(null)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.85, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.85, opacity: 0 }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 28 }}
+                            className="relative max-w-2xl w-full"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={() => setLightboxImg(null)}
+                                className="absolute -top-4 -right-4 z-10 w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+                            >
+                                <X size={18} />
+                            </button>
+                            <img
+                                src={`/${lightboxImg}`}
+                                alt="Certificate"
+                                className="w-full rounded-2xl shadow-2xl border border-white/10"
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </section>
     );
 };
 
-const CertificateCard: React.FC<{ cert: Certificate; index: number }> = ({ cert, index }) => {
+const CertificateCard: React.FC<{
+    cert: Certificate;
+    index: number;
+    onImageClick: (img: string) => void;
+}> = ({ cert, index, onImageClick }) => {
     const config = categoryConfig[cert.category];
     const IconComponent = config.icon;
 
@@ -141,8 +185,33 @@ const CertificateCard: React.FC<{ cert: Certificate; index: number }> = ({ cert,
                         <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-slate-500 font-mono">
                             {cert.date}
                         </span>
+
+                        {/* View Certificate Button */}
+                        {cert.imageUrl && (
+                            <button
+                                onClick={() => onImageClick(cert.imageUrl!)}
+                                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white border border-white/15 hover:bg-white/20 transition-all duration-200 ml-auto"
+                            >
+                                <ZoomIn size={12} />
+                                Lihat Sertifikat
+                            </button>
+                        )}
                     </div>
                 </div>
+
+                {/* Thumbnail */}
+                {cert.imageUrl && (
+                    <div
+                        className="flex-shrink-0 w-20 h-24 rounded-xl overflow-hidden border border-white/10 cursor-pointer hover:border-amber-400/50 transition-all duration-200 hover:scale-105 shadow-lg"
+                        onClick={() => onImageClick(cert.imageUrl!)}
+                    >
+                        <img
+                            src={`/${cert.imageUrl}`}
+                            alt={cert.title}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                )}
             </div>
         </motion.div>
     );

@@ -23,6 +23,7 @@ export interface Certificate {
   date: string;
   category: 'competition' | 'seminar' | 'training';
   achievement?: string;
+  imageUrl?: string;
 }
 
 export interface NavItem {
