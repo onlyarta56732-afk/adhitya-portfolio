@@ -42,6 +42,38 @@ export const CERTIFICATES: Certificate[] = [
     category: 'competition',
     achievement: 'Finalist',
   },
+  {
+    id: 5,
+    title: 'Sertifikat Kompetensi – Keamanan Siber Muda',
+    issuer: 'Badan Nasional Sertifikasi Profesi (BNSP) – Lembaga Sertifikasi Teknologi Digital',
+    date: 'Jan 2025',
+    category: 'training',
+    achievement: 'Cyber Security',
+  },
+  {
+    id: 6,
+    title: 'MTCNA – MikroTik Certified Network Associate',
+    issuer: 'MikroTik (Mikrotikls SIA)',
+    date: 'Apr 2025',
+    category: 'training',
+    achievement: 'MTCNA',
+  },
+  {
+    id: 7,
+    title: 'Certificate Digicourse – Laravel Web Development',
+    issuer: 'SRC Telkom Indonesia × Sanbercode (Bootcamp)',
+    date: 'Feb 2025',
+    category: 'training',
+    achievement: 'Laravel',
+  },
+  {
+    id: 8,
+    title: 'Cyber Security Officer Training',
+    issuer: 'PT Telkom Prima Cipta Certifia × PT Telkom Indonesia (Persero) Tbk',
+    date: 'Nov 2024',
+    category: 'training',
+    achievement: 'Cyber Security',
+  },
 ];
 
 export const PROJECTS: Project[] = [
