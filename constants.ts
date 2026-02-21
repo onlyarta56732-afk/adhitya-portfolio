@@ -1,8 +1,9 @@
-import { Certificate, Experience, Project } from './types';
+import { Certificate, Experience, Project, Skill } from './types';
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Certificates', href: '#certificates' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
@@ -126,6 +127,165 @@ export const CERTIFICATES: Certificate[] = [
     category: 'seminar',
     achievement: 'Peserta',
     imageUrl: 'cert-innovillage-telkom-2025.jpg',
+  },
+];
+
+export const TECHNICAL_SKILLS: Skill[] = [
+  // Embedded & IoT
+  { name: 'Embedded C / C++', level: 90, category: 'Embedded & IoT' },
+  { name: 'Arduino / ESP32', level: 92, category: 'Embedded & IoT' },
+  { name: 'MQTT / IoT Protocols', level: 80, category: 'Embedded & IoT' },
+  { name: 'LoRa Communication', level: 75, category: 'Embedded & IoT' },
+  { name: 'PCB Design', level: 70, category: 'Embedded & IoT' },
+
+  // Programming
+  { name: 'C++', level: 88, category: 'Programming' },
+  { name: 'Python', level: 75, category: 'Programming' },
+  { name: 'Kotlin (Android)', level: 70, category: 'Programming' },
+  { name: 'JavaScript / React', level: 65, category: 'Programming' },
+  { name: 'PHP / Laravel', level: 62, category: 'Programming' },
+
+  // Cybersecurity
+  { name: 'Network Security', level: 82, category: 'Cybersecurity' },
+  { name: 'BNSP Cyber Security', level: 80, category: 'Cybersecurity' },
+  { name: 'Ethical Hacking Basics', level: 65, category: 'Cybersecurity' },
+  { name: 'System Hardening', level: 70, category: 'Cybersecurity' },
+
+  // Networking
+  { name: 'MikroTik (MTCNA)', level: 88, category: 'Networking' },
+  { name: 'Network Configuration', level: 85, category: 'Networking' },
+  { name: 'VPN & Firewall', level: 75, category: 'Networking' },
+  { name: 'Cisco / VLAN', level: 68, category: 'Networking' },
+
+  // Robotics
+  { name: 'PID Control', level: 85, category: 'Robotics' },
+  { name: 'Sensor Integration', level: 88, category: 'Robotics' },
+  { name: 'Motor Drivers', level: 80, category: 'Robotics' },
+  { name: 'ROS (Robot Operating System)', level: 65, category: 'Robotics' },
+  { name: 'Computer Vision (Basic)', level: 60, category: 'Robotics' },
+];
+
+export const DEVICE_PLATFORMS: import('./types').DevicePlatform[] = [
+  {
+    name: 'Arduino / ESP32',
+    icon: '🔌',
+    tags: ['C / C++', 'Sensors', 'PWM', 'I2C', 'UART'],
+    proficiency: 'Expert',
+  },
+  {
+    name: 'Raspberry Pi',
+    icon: '🍓',
+    tags: ['Linux', 'Python', 'GPIO', 'Camera'],
+    proficiency: 'Advanced',
+  },
+  {
+    name: 'MikroTik Router',
+    icon: '📡',
+    tags: ['RouterOS', 'MTCNA', 'VLAN', 'VPN', 'Firewall'],
+    proficiency: 'Expert',
+  },
+  {
+    name: 'Android (Kotlin)',
+    icon: '📱',
+    tags: ['Kotlin', 'Jetpack', 'REST API', 'Bluetooth'],
+    proficiency: 'Advanced',
+  },
+  {
+    name: 'Linux / Ubuntu',
+    icon: '🐧',
+    tags: ['CLI', 'Bash', 'SSH', 'Networking', 'Systemd'],
+    proficiency: 'Advanced',
+  },
+  {
+    name: 'Ubuntu + ROS',
+    icon: '🤖',
+    tags: ['ROS1/ROS2', 'roslaunch', 'Topics', 'Publisher/Subscriber', 'Ubuntu'],
+    proficiency: 'Intermediate',
+  },
+  {
+    name: 'Node-RED',
+    icon: '🔴',
+    tags: ['Flow-based', 'MQTT', 'Dashboard', 'IoT'],
+    proficiency: 'Expert',
+  },
+  {
+    name: 'Git & GitHub',
+    icon: '🐙',
+    tags: ['Version Control', 'CI/CD', 'Branching', 'Actions'],
+    proficiency: 'Advanced',
+  },
+  {
+    name: 'Cisco Packet Tracer',
+    icon: '🖧',
+    tags: ['VLAN', 'Routing', 'Switching', 'ACL'],
+    proficiency: 'Intermediate',
+  },
+  {
+    name: 'VS Code / Arduino IDE',
+    icon: '💻',
+    tags: ['Extensions', 'Debugging', 'PlatformIO'],
+    proficiency: 'Expert',
+  },
+  {
+    name: 'Figma',
+    icon: '🎨',
+    tags: ['UI Design', 'Prototyping', 'Wireframes'],
+    proficiency: 'Intermediate',
+  },
+  {
+    name: 'Firebase / MySQL',
+    icon: '🗄️',
+    tags: ['Realtime DB', 'Auth', 'SQL', 'REST'],
+    proficiency: 'Intermediate',
+  },
+  {
+    name: 'Docker',
+    icon: '🐳',
+    tags: ['Containers', 'Compose', 'Networking'],
+    proficiency: 'Familiar',
+  },
+];
+
+export const SOFT_SKILLS: import('./types').SoftSkill[] = [
+  {
+    name: 'Leadership',
+    icon: '👑',
+    description: 'Led a Computer & Network Engineering Club as Chairperson, trained members, and managed club operations across two years.',
+  },
+  {
+    name: 'Problem Solving',
+    icon: '🧩',
+    description: 'Consistently tackled complex hardware/software challenges in competitions — from robot tuning to embedded debugging under pressure.',
+  },
+  {
+    name: 'Teamwork & Collaboration',
+    icon: '🤝',
+    description: 'Collaborated in multidisciplinary teams for IoT, robotics, and research projects, adapting to different working styles.',
+  },
+  {
+    name: 'Adaptability',
+    icon: '⚡',
+    description: 'Quickly picked up new tech stacks (Laravel, Kotlin, ROS) driven by competition and project demands.',
+  },
+  {
+    name: 'Public Speaking',
+    icon: '🎤',
+    description: 'Presented technical solutions and papers at competitions, workshops, and intra-school training sessions.',
+  },
+  {
+    name: 'Time Management',
+    icon: '⏱️',
+    description: 'Balanced active competition prep, club management, academic projects, and certifications simultaneously.',
+  },
+  {
+    name: 'Technical Writing',
+    icon: '📝',
+    description: 'Authored scientific papers and technical reports for national IoT innovation competitions.',
+  },
+  {
+    name: 'Critical Thinking',
+    icon: '🔍',
+    description: 'Approached system design and debugging analytically — validated sensor data, identified root causes, and iterated fast.',
   },
 ];
 

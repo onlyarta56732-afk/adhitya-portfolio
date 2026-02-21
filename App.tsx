@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Certificates from './components/Certificates';
+import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -23,6 +24,7 @@ function App() {
       <main className="relative z-10 flex flex-col gap-0">
         <Hero />
         <About />
+        <Skills />
         <Certificates />
         <Experience />
         <Projects />

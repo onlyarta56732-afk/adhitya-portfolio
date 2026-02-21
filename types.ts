@@ -26,6 +26,25 @@ export interface Certificate {
   imageUrl?: string;
 }
 
+export interface Skill {
+  name: string;
+  level: number; // 0-100
+  category: string;
+}
+
+export interface DevicePlatform {
+  name: string;
+  icon: string; // emoji or text icon
+  tags: string[];
+  proficiency: 'Expert' | 'Advanced' | 'Intermediate' | 'Familiar';
+}
+
+export interface SoftSkill {
+  name: string;
+  description: string;
+  icon: string;
+}
+
 export interface NavItem {
   label: string;
   href: string;
