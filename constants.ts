@@ -18,7 +18,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2025',
     category: 'competition',
     achievement: '1st Runner-Up',
-    imageUrl: 'cert-inspection-its-2025.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-24 at 11.16.01.jpeg',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2024',
     category: 'competition',
     achievement: '1st Runner-Up',
-    imageUrl: 'cert-ionic-pens-2024.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-24 at 11.16.05.jpeg',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2024',
     category: 'competition',
     achievement: 'Best Innovation',
-    imageUrl: 'cert-ionic-pens-2024-paper.jpg',
+
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const CERTIFICATES: Certificate[] = [
     date: '2025',
     category: 'competition',
     achievement: 'Finalist',
-    imageUrl: 'cert-rro-its-2025.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-24 at 11.16.41.jpeg',
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Jan 2025',
     category: 'training',
     achievement: 'Cyber Security',
-    imageUrl: 'cert-bnsp-cybersecurity.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.31.37.jpeg',
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Apr 2025',
     category: 'training',
     achievement: 'MTCNA',
-    imageUrl: 'cert-mikrotik-mtcna.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.31.37 (2).jpeg',
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Feb 2025',
     category: 'training',
     achievement: 'Laravel',
-    imageUrl: 'cert-sanbercode-laravel.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.31.37 (1).jpeg',
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Nov 2024',
     category: 'training',
     achievement: 'Cyber Security',
-    imageUrl: 'cert-telkom-cybersecurity-officer.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.33.33.jpeg',
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Nov 2024',
     category: 'seminar',
     achievement: 'Participant',
-    imageUrl: 'cert-ichiro-its-workshop-2024.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.48.45.jpeg',
   },
   {
     id: 10,
@@ -99,7 +99,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Jun 2025',
     category: 'seminar',
     achievement: 'Graduate',
-    imageUrl: 'cert-codepolitan-generative-ai.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.48.45 (1).jpeg',
   },
   {
     id: 11,
@@ -108,7 +108,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Sep 2025',
     category: 'seminar',
     achievement: 'Delegate',
-    imageUrl: 'cert-aiesec-youth-today-2025.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.48.46.jpeg',
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Nov 2025',
     category: 'seminar',
     achievement: 'Peserta',
-    imageUrl: 'cert-green-living-energy-policy-2025.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.48.46 (1).jpeg',
   },
   {
     id: 13,
@@ -126,7 +126,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Dec 2025',
     category: 'seminar',
     achievement: 'Peserta',
-    imageUrl: 'cert-innovillage-telkom-2025.jpg',
+    imageUrl: 'public/WhatsApp Image 2026-02-22 at 12.48.46 (2).jpeg',
   },
 ];
 

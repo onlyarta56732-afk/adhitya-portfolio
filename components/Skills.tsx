@@ -53,8 +53,8 @@ const TechnicalPanel: React.FC = () => {
                 <button
                     onClick={() => setActiveCategory(null)}
                     className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 border ${activeCategory === null
-                            ? 'bg-white/10 border-white/30 text-white'
-                            : 'border-white/10 text-slate-400 hover:text-white hover:border-white/20'
+                        ? 'bg-white/10 border-white/30 text-white'
+                        : 'border-white/10 text-slate-400 hover:text-white hover:border-white/20'
                         }`}
                 >
                     All
@@ -66,8 +66,8 @@ const TechnicalPanel: React.FC = () => {
                             key={cat}
                             onClick={() => setActiveCategory(cat === activeCategory ? null : cat)}
                             className={`flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 border ${activeCategory === cat
-                                    ? `bg-gradient-to-r ${meta.gradient} border-transparent text-white shadow-lg`
-                                    : 'border-white/10 text-slate-400 hover:text-white hover:border-white/20'
+                                ? `bg-gradient-to-r ${meta.gradient} border-transparent text-white shadow-lg`
+                                : 'border-white/10 text-slate-400 hover:text-white hover:border-white/20'
                                 }`}
                         >
                             {meta.icon}
@@ -207,7 +207,7 @@ const Skills: React.FC = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Skills</h2>
                     <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full" />
                     <p className="text-slate-400 mt-4 text-lg max-w-2xl">
-                        From hardware to soft skills — a complete view of what I bring to the table.
+                        From hardware to soft skills a complete view of what I bring to the table.
                     </p>
                 </motion.div>
 
@@ -224,8 +224,8 @@ const Skills: React.FC = () => {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`group flex items-center gap-2 px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 border ${activeTab === tab.id
-                                    ? 'bg-gradient-to-r from-primary to-secondary border-transparent text-white shadow-lg shadow-primary/25'
-                                    : 'glass-card border-white/10 text-slate-400 hover:text-white hover:border-white/20'
+                                ? 'bg-gradient-to-r from-primary to-secondary border-transparent text-white shadow-lg shadow-primary/25'
+                                : 'glass-card border-white/10 text-slate-400 hover:text-white hover:border-white/20'
                                 }`}
                         >
                             <span className={`transition-transform duration-200 ${activeTab === tab.id ? 'scale-110' : 'group-hover:scale-110'}`}>
