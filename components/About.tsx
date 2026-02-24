@@ -87,7 +87,7 @@ const About: React.FC = () => {
             <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 mb-4">
               <Code size={32} />
             </div>
-            <div className="text-3xl font-bold text-white">3</div>
+            <div className="text-3xl font-bold text-white">5+</div>
             <div className="text-slate-400 text-sm">Languages</div>
           </motion.div>
 
